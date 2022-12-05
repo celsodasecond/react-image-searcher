@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# React Practice on Handling User Input, Forms, and Events ![forthebadge](https://badges.aleen42.com/src/react.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App Screenshot
 
-## Available Scripts
 
-In the project directory, you can run:
+## What is this Project ?
 
-### `npm start`
+The concept behind this app (image-search) is to study how React handles user input, forms, and events.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What did I learned ?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Event Handlers in React
+- Adding parenthesis on function call will make the function automatically run.
+- Form was refactored using a controlled environment to tell the input a single-fixed final value and also, for the value to not be stored in the HTML environment but is centralized in the virtual DOM.
+- How the a child i.e. SearchInput.js can communicate to a Parent i.e. App.js.
+- How to make request from inside React using Ajax Requests' to send request to Pixabay API.
+- Axios was used instead of Fetch, to make the development easier.
+- Learned more about Async/await in React. 
+- Always use the id of key property whenever using a map function.
 
-### `npm test`
+## How to Build ?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All usage instruction and information update on [create-react-app.md](https://github.com/celsodasecond/first-react-app/blob/master/create-react-app.md).
 
-### `npm run build`
+## Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Application Lifecycle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For User Input:
+1. User Types Input.
+2. Callbacks get invoked.
+3. We call setState with new value.
+4. Component re-renders.
+5. Input is told what the value is.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Show Searched Image:
+1. Component render itself for the first time (no images).
+2. onSearchSubmit() method gets called after input.
+3. Request made to pixabay.
+4. Request complete.
+5. Set the image data on state.
+6. App components re-renders and show the images.
 
-### `npm run eject`
+#### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node JS](https://nodejs.org/en/) 
+- [React (create-react-app)](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Semantic UI](https://semantic-ui.com/)
+- [Pixabay API](https://pixabay.com/api/docs/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Clone Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+https://github.com/celsodasecond/first-react-app.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This Command will copy a full project to your local environment
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
