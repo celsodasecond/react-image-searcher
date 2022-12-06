@@ -1,6 +1,7 @@
 # React Practice on Handling User Input, Forms, and Events ![forthebadge](https://badges.aleen42.com/src/react.svg)
 
 ## App Screenshot
+![image](https://user-images.githubusercontent.com/75917932/205805489-f75fc117-aa1b-4f0f-86e9-696ac3cc7806.png)
 
 
 ## What is this Project ?
