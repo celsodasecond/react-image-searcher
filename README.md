@@ -52,7 +52,7 @@ To Show Searched Image:
 #### Clone Project
 
 ```shell
-https://github.com/celsodasecond/first-react-app.git
+https://github.com/celsodasecond/react-image-searcher.git
 ```
 
 This Command will copy a full project to your local environment
